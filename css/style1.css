@@ -1,0 +1,119 @@
+body {
+    font-family: 'baloo bhai', cursive;
+    margin: 0px;
+    padding: 0px;
+    background: url("/pic/gym.jpg");
+    color: white;
+}
+
+.left {
+    border: 2px solid transparent;
+    
+    /* isse ham width bhi set kr sakte hai */
+    display: inline-block;
+    position: absolute;
+    left: 55px;
+    top: 20px;
+}
+
+.left img {
+    width: 131px;
+    border-radius: 50px;
+    filter: invert(100%);
+}
+
+.left div {
+    text-align: center;
+    font-size: 22px;
+    line-height: 25px;
+}
+
+.mid {
+    /* 3 condition when we do center using margin  */
+    display: block;
+    width: 41%;
+    margin: 20px auto;
+    border: 2px solid transparent;
+}
+
+.right {
+    /* it relate to parent block(header) */
+    position: absolute;
+    right: 34px;
+    top: 20px;
+    display: inline-block;
+    border: 2px solid transparent;
+    
+}
+.right a:hover,.right a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 25px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+
+}
+
+.navbar li a:hover,.navbar li a.active {
+    text-decoration: none;
+    color: gray;
+
+}
+
+.btn {
+    font-family: 'baloo bhai', cursive;
+    margin: 0px 9px;
+    color: white;
+    background-color: black;
+    padding: 9px 17px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(209, 192, 192);
+}
+
+.container {
+    border: 2px solid transparent;
+    margin: 124px 80px;
+    padding: 35px 75px;
+    width: 33%;
+    border-radius: 35px;
+}
+
+.form-group input {
+    font-family: 'baloo bhai', cursive;
+    text-align: center;
+    display: block;
+    width: 448px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 9px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container button {
+    display: block;
+    width: 74%;
+    margin: 20px auto;
+}
