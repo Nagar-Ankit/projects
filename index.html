@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jusco Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <style>
+        /* first css reset */
+
+        body {
+            font-family: 'baloo bhai', cursive;
+            margin: 0px;
+            padding: 0px;
+            background: url("gym.jpg");
+            color: white;
+        }
+
+        .left {
+            border: 2px solid transparent;
+            
+            /* isse ham width bhi set kr sakte hai */
+            display: inline-block;
+            position: absolute;
+            left: 55px;
+            top: 20px;
+        }
+
+        .left img {
+            width: 131px;
+            border-radius: 50px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 22px;
+            line-height: 25px;
+        }
+
+        .mid {
+            /* 3 condition when we do center using margin  */
+            display: block;
+            width: 41%;
+            margin: 20px auto;
+            border: 2px solid transparent;
+        }
+
+        .right {
+            /* it relate to parent block(header) */
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+            border: 2px solid transparent;
+            
+        }
+        .right a:hover,.right a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+
+        }
+
+        .navbar li a:hover,.navbar li a.active {
+            text-decoration: none;
+            color: gray;
+
+        }
+
+        .btn {
+            font-family: 'baloo bhai', cursive;
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 9px 17px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(209, 192, 192);
+        }
+
+        .container {
+            border: 2px solid transparent;
+            margin: 124px 80px;
+            padding: 35px 75px;
+            width: 33%;
+            border-radius: 35px;
+        }
+
+        .form-group input {
+            font-family: 'baloo bhai', cursive;
+            text-align: center;
+            display: block;
+            width: 448px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 9px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 74%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTFdtroGuu3YTeyYZ-yAausr6q36CjZZBEbjA&usqp=CAU" alt="Gym Logo"
+                id="">
+            <div>
+                Jusco fitness
+            </div>
+        </div>
+
+        <!-- mid box for nav -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a> </li>
+                <li><a href="#">About us</a> </li>
+                <li><a href="#">Fitness Calulator</a> </li>
+                <li><a href="#">Contect us</a> </li>
+            </ul>
+
+        </div>
+
+        <!-- right box  for button -->
+        <div class="right">
+            <button class="btn"><a href="/Projects/gym project/html/Style3.html">Sign Up</a> </button>
+            <button class="btn"> <a href="/Projects/gym project/html/Style3.html">Login</a></button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym Now</h1>
+        <form action="noaction.java">
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name" id="" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Last Name" id="" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email" id="" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Contect number" id="" required>
+            </div>
+            <button class="btn">
+                Contect Us
+            </button>
+        </form>
+    </div>
+
+</body>
+
+</html>
